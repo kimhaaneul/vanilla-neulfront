@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  font-family: Pretendard;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+#home-nav {
+  background: rgb(7, 23, 51);
+  height: 50px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 100px;
+  color: rgb(255, 255, 255);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+#nav-continer {
+  position: fixed;
+}
+#home-left {
+  display: flex;
+  align-items: center;
+}
+
+#home-nav a {
+  display: flex;
+  align-items: center;
+}
+
+#home-nav a {
+  margin-right: 10px;
+}
+
+#home-nav-p {
+  margin-left: 10px;
+}
+
+#menu {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#menu li {
+  margin-left: 20px;
+}
+
+#menu li a {
+  color: rgb(255, 255, 255);
+  display: inline-block;
+}
+
+#menu li a:hover {
+  color: rgb(255, 230, 0);
+}
+
+#menu-icon {
+  cursor: pointer;
+}
+
+.shake {
+  animation: shake-animation 0.5s;
+}
+
+@keyframes shake-animation {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/*======================= navbar css 끝 ======================*/
+
+#click-message {
+  cursor: pointer;
+  color: rgb(7, 23, 51);
+  text-align: center;
+  margin-top: 40vh;
+  font-size: 200px;
+}
+
+/* ====================abutme 구간 ===============================*/
+#abutme {
+  background-color: rgb(7, 23, 51);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  opacity: 0;
+  transition: opacity 2.5s ease-in-out;
+  flex-direction: column;
+}
+
+.typing {
+  font-size: 50px;
+}
+.typing:after {
+  display: inline-block;
+  margin-left: 2px;
+  vertical-align: middle;
+  content: "";
+  background: #ffffff;
+  width: 2px;
+  height: 48px;
+  animation: blink infinite 1s ease;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#abutme p {
+  font-size: 20pt;
+  margin: 30px 0;
+  line-height: 1.5;
+}
+
+/*=================== profile 구간 ==========================*/
+
+#profile-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+}
+
+#profile-img {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+#profile-content h1 {
+  font-size: 30pt;
+  margin-right: 20px;
+  color: rgb(7, 23, 51);
+}
+
+#profile-content-div p,
+h2 {
+  padding: 3px;
+}
+
+#profile-content-hr {
+  width: 10px;
+  height: 44px;
+  background-color: rgb(255, 230, 0);
+  border: none;
+  border-left: 4px solid rgb(255, 230, 0);
+  margin-right: 10px;
+}
+
+#profile-content-hr2 {
+  width: 10px;
+  height: 44px;
+  background-color: rgb(0, 140, 255);
+  border: none;
+  border-left: 4px solid rgb(0, 140, 255);
+  margin-right: 10px;
+}
+
+#profile-content-line {
+  border: 2px solid rgb(255, 255, 255);
+}
+
+#profile-content-div {
+  display: flex;
+  align-items: center;
+}
+
+#profile-contentr {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+/* =================== skils 구간=========================*/
+
+#skills-content {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(7, 23, 51);
+}
+
+#skills-content h1 {
+  font-size: 30pt;
+  color: rgb(255, 255, 255);
+}
+#skills-title {
+  padding: 30px;
+}
+
+#skills-box-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#skills-box {
+  width: 300px;
+  height: 20vh;
+  margin: 30px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+}
