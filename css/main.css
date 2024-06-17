@@ -267,17 +267,17 @@ h2 {
   margin: 30px;
 }
 
-#projects-li-box h3 {
+#projects-li-btn h3 {
   font-size: 22px;
   line-height: 1.5;
 }
 
-#projects-li-box {
+#projects-li-btn {
   color: #ffffff;
   font-size: 20pt;
   background: rgb(7, 23, 51);
   width: 80vh;
-  height: 7vh;
+  height: 10vh;
   border-radius: 25px;
   margin: auto;
   padding: 10px;
@@ -286,7 +286,101 @@ h2 {
   border: none;
 }
 
-#projects-li-box:hover {
+#projects-li-btn:hover {
   color: rgb(7, 23, 51);
   background: rgb(255, 230, 0);
+}
+
+/* ================== 모달 ====================*/
+.modal {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow-y: initial !important;
+  overflow-y: hidden;
+}
+.modal-overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+}
+.modal-content {
+  all: unset;
+  position: relative;
+  display: flexbox;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: white;
+  padding: 15px;
+  border-radius: 15px;
+  top: 0;
+  width: 60%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  max-width: 100%;
+  max-height: 80vh;
+  overflow: auto;
+}
+
+.modal-content::-webkit-scrollbar {
+  width: 12px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 230, 0);
+  border-radius: 10px;
+}
+
+.modal-content::-webkit-scrollbar-track {
+  background: #ffffff;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.closeModal {
+  background-color: rgb(7, 23, 51);
+  color: #ffffff;
+  border-radius: 8px;
+  border: none;
+  width: 60px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+/* =================== 모달 내용 구간 ======================*/
+#modal-content-box {
+  display: flexbox;
+  align-items: center;
+  text-align: left;
+  line-height: 1.6;
+  color: rgb(7, 23, 51);
+  padding: 20px;
+}
+
+#modal-content-box h2 {
+  font-size: 25px;
+  color: rgb(7, 23, 51);
+}
+
+#modal-content-box h3 {
+  font-size: 18px;
+  color: rgb(7, 23, 51);
+}
+
+#modal-hr {
+  border-color: rgb(230, 228, 226);
 }

@@ -57,3 +57,19 @@ function typingEvent() {
 let setTyping = setInterval(typingEvent, txtSpeed);
 
 /* 모달 */
+const modalBtn = document.querySelector("#projects-li-btn");
+const modal = document.querySelector(".modal");
+const closeModal = document.querySelector(".closeModal");
+const modaloverlay = document.querySelector(".modal-overlay");
+
+modalBtn.addEventListener("click", () => {
+  modal.classList.remove("hidden");
+});
+
+closeModal.addEventListener("click", () => {
+  modal.classList.add("hidden");
+});
+
+modaloverlay.addEventListener("click", () => {
+  modal.classList.add("hidden");
+});
