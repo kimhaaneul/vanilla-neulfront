@@ -6,28 +6,22 @@
     <meta name="keywords" content="HTML,CSS,JavaScript,FrontEnd,프론트엔드" />
     <link rel="stylesheet" href="/css/main.css" />
     <title>neulfront</title>
-    <div id="home-nav">
-      <div id="home-left">
+   
+  </head>
+  <div id="home-nav">
+    <div id="home-left">
         <a href="#">
-          <img
-            src="/img/pngegg.png"
-            width="32"
-            height="32"
-            decoding="async"
-            data-nimg=""
-            id="home-icon"
-          />
+            <img src="/img/pngegg.png" width="32" height="32" decoding="async" data-nimg="" id="home-icon">
         </a>
         <p id="home-nav-p">NEULFRONT!</p>
-      </div>
-      <ul id="menu">
-        <li><a href="#">Profile</a></li>
-        <li><a href="#">Skills</a></li>
-        <li><a href="#">Projects</a></li>
-      </ul>
     </div>
-  </head>
-  <body>
+    <ul id="menu">
+        <li id="profile-link"><a href="#">Profile</a></li>
+        <li id="skills-link"><a href="#">Skills</a></li>
+        <li id="projects-link"><a href="#">Projects</a></li>
+    </ul>
+</div>
+
     <div id="click-message">Click!</div>
     <main class="contents" id="main-content" style="display: none">
       <div id="abutme">
@@ -39,7 +33,8 @@
         </p>
       </div>
 
-      <section id="profile-content">
+        <section id="profile">
+        <div id="profile-content">
         <div id="profile-img">
           <img
             src="/img/profile.png"
@@ -59,7 +54,7 @@
             되겠습니다.
           </p>
           <br />
-          <div id="profile-contentr">
+          <div id = "profile-div-box">
             <div id="profile-content-div">
               <hr id="profile-content-hr" />
               <div id="profile-text">
@@ -88,11 +83,13 @@
                 <p>kim-haneul@naver.com</p>
               </div>
              </div>
-                  </div>
-                  <br>
-                  <br>
+            </div>
+            <br>
+            <br>
                   <h2>▪ EDUCATION</h2>
-                  <div id="profile-contentr">
+                  
+                  <div id = "profile-div-box">
+                    <div id="profile-content-div">
         <div id="profile-content-div">
           <hr id="profile-content-hr2" />
             <div id="profile-text">
@@ -100,7 +97,9 @@
               <p>2023.11.14 - 2024.05.31</p>
             </div>
         </div>
-    </div>
+        </div>
+        </div>
+
     <hr id="profile-content-line">
             <div id="profile-content-div">
             <hr id="profile-content-hr2" />
@@ -109,9 +108,12 @@
                 <p>2016.02 - 2020.02</p>
             </div>
             </div>
+          </div>
+       
             </section>
 
-            <section id ="skills-content">
+            <section id ="skills">
+              <div id ="skills-content">
                 <div id="skills-title">
                     <h1>SKILLS</h1>
                 </div>
@@ -162,279 +164,270 @@
                       </li>
               </ul>   
             </div>
+          </div>
             </section>
 
-            <section id ="projects-content">
+            <section id ="projects">
+              <div id ="projects-content">
               <div id="projects-title">
                 <h1>PROJECTS</h1>
             </div>
             <div id="projects-box-container">
               <ul>
                 <li>
-                  <button id="projects-li-btn">
+                  <button id="projects-li-btn1" data-content="content1">
                   <h3>AI기반 영어 문제 출제 서비스<br>
                   (초등학생들을 대상으로 한 영어 문제 출제 서비스)</h3></button>
-                  <div class="modal hidden">
-                    <div class="modal-overlay"></div>
-                    <div class="modal-content">
-                      <div id = "modal-content-box">
-                      
-                      <h2>[EDUWORDS] GPT 3.5 Turbo 기반 초등학생 영어 문제 생성 및 온라인 학습 서비스</h2>
-                      
-                      <h3>진행 기간 : 2024. 04. 23 ~ 2024. 05 .30(5주)</h3><br>
-                      <h3>사용 스킬</h3>
-                      <div>
-                      <table>
-                        <tr>
-                            <th>구분</th>
-                            <th>내용</th>
-                        </tr>
-                        <tr>
-                            <td>사용언어</td>
-                            <td>
-                              <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white">
-                                <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white"/>
-                                <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white"/>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Front</td>
-                            <td>
-                                <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=HTML5&logoColor=white"/>
-                                <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=CSS3&logoColor=white"/>
-                                <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>개발도구</td>
-                            <td>
-                                <img src="https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white"/>
-                                <img src="https://img.shields.io/badge/IntelliJ_IDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white"/>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>서버환경</td>
-                            <td>
-                                <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white"/>
-                              <img src="https://img.shields.io/badge/Amazon_AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white">
-                              <img src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>데이터베이스</td>
-                            <td>
-                                <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white"/>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>협업도구</td>
-                            <td>
-                                <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=Git&logoColor=white"/>
-                                <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white"/>
-                            </td>
-                        </tr>
-                    </table>
-                    <br>
-                  </div>
-                      <h3>담당 역할 : Front-End</h3>
-                   <br>
-                      <p> EDUWORDS는 초등학생을 대상으로 영어 학습 문제를 생성하고 온라인 학습을 지원하는 혁신적인 에듀테크 플랫폼입니다. <br>
-                        이 서비스는 GPT 3.5 Turbo를 기반으로 하여 다양한 형태의 영어 문제를 자동으로 생성하며, 
-                        학생들이 시간과 장소에 구애받지 않고 학습할 수 있도록 도와줍니다.</p>
-                        <br>
-                        <hr id="modal-hr"/>
-                      </div>
-                      <div id = "modal-content-box">
-                        <ul>
-                          <li id="modal-li-box">
-                            <div>
-                              <h3>시스템 아키텍처</h3>
-                            </div>
-                            <div>
-                              <img src="/img/eduwords아키텍처.png" width="800px">
-
-                              <p>파인튜닝된 GPT 모델을 사용해 만든 영어 문제를 파이썬으로 호출하고 PAST API를 통해 백터DB에 저장합니다</p>
-                            </div>
-                          </li>
-                          <br>
-                          <li id="modal-li-box">
-                            <div>
-                              <h3>서비스 흐름도</h3>
-                            </div>
-                            <div>
-                              <img src="/img/서비스흐름도.PNG" width="800px">
-
-                              <p>이해를 돕기 위한 서비스 흐름도 입니다. <br>
-                                로그인 시 교사와 학생으로 나눠지며 교사와 학생은 사용할 수 있는 기능이 다릅니다.</p>
-                            </div>
-                          </li>
-                          <br>
-                          <li id="modal-li-box">
-                            <div>
-                              <h3>단어장</h3>
-                            </div>
-                            <div>
-                              <img src="/img/단어장.PNG" width="800px">
-
-                              <p>단어장은 원하는 영어 단어를 검색하고 검색한 단어를 개인 단어장에 추가하여 학습할 수 있습니다.<br>
-                              초등학생들이 이용하는 만큼 한 눈에 확인할 수 있도록 매우 단순한 ui로 디자인 하였습니다.</p>
-                            </div>
-                          </li>
-                          <br>
-                          <li id="modal-li-box">
-                            <div>
-                              <h3>문제생성</h3>
-                            </div>
-                            <div>
-                              <img src="/img/문제생성.PNG" width="800px">
-
-                              <p>문제생성은 GPT 3.5터보를 이용한 AI생성과 직접 문제생성를 할 수 있습니다.<br>
-                              교사들이 쉽게 사용할 수 있도록 최대한 깔끔하고 직관적인게 디자인 하였습니다.
-                              </p>
-                            </div>
-                          </li>
-                          <br>
-                          <li id="modal-li-box">
-                            <div>
-                              <h3>문제리스트</h3>
-                            </div>
-                            <div>
-                              <img src="/img/문제리스트.PNG" width="800px">
-
-                              <p>문제리스트는 직접 생성한 문제와 AI로 생성한 문제들이 모아져 있는 공간입니다. 문제를 선택하여 문제 생성을 클릭하면<br>
-                                미리보기 화면으로 넘어가게 되며, 선택된 문제들은 해당하는 학생들에게 배포할수 있습니다. <br>
-                                문제를 선택하면 한 눈에 확인할 수 있도록 선택한 문제에 테두리와, 문제의 개수만큼 목록 왼쪽 하단에 count가 같이 올라가도록 설정하였습니다.
-                              </p>
-                            </div>
-                          </li>
-                          <br>
-                          <li id="modal-li-box">
-                            <div>
-                              <h3>공부방</h3>
-                            </div>
-                            <div>
-                              <img src="/img/공부방.PNG" width="800px">
-
-                              <p>공부방은 문제를 부여받은 학생들이 문제집을 풀 수 있습니다. 해당 목록을 클릭하면 관련한 문제를 풀 수 있습니다.<br>
-                                학생들에게 공부에 대한 목표를 가질 수 있도록 학업에 관련한 자극 문구를 넣었으며,<br>
-                                문제를 풀 때는 어떤 답을 선택했는지 쉽게 확인할 수 있도록 하였습니다.<br>
-                              </p>
-                            </div>
-                          </li>
-                        </li>
-                          <br>
-                        </ul>
-                      </div>
-                      <hr id="modal-hr" />
-                     <div id="modal-content-box">
-                      <h3>EDUWORDS 시연 영상</h3>
-                      <br>
-                      <video src="/video/eduwords.mp4" width="800px" controls></video>
-                      <p>tts가 함께 들어있습니다. 전체적인 흐름을 알 수 있습니다. 소리로 들으면 좋습니다!</p>
-                     </div>
-                     <button class="closeModal">close</button>
-                     <br>
-                     </div>
-                   </div>
-                
                 </li>
                 <br>
                 <li>
-                <button id="projects-li-btn">
-                  <h3>LuxuryClothing<br>
-                  OCR 기반 영수증 활용 중고 명품 판매 플랫폼</h3></button>
-                  <div class="modal hidden">
-                    <div class="modal-overlay"></div>
-                    <div class="modal-content">
-                      <div id = "modal-content-box">
-                      
-                      <h2>[LuxuryCloting] OCR 기반 영수증 활용 중고 명품 판매 플랫폼</h2>
-                      
-                      <h3>진행 기간 : 2024. 01. 16 ~ 2024. 02 .26(5주)</h3><br>
-                      <h3>사용 스킬</h3>
-                      <div>
-                        <table>
-                          <tr>
-                              <th>구분</th>
-                              <th>내용</th>
-                          </tr>
-                           <tr>
-                              <td>FRONTEAD</td>
-                              <td>
-                                   <img src="https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=HTML5&logoColor=white"/>
-                                  <img src="https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=CSS3&logoColor=white"/>
-                                  <img src="https://img.shields.io/badge/JS-F7DF1E?style=for-the-badge&logo=JS&logoColor=white"/>
-                                  <img src="https://img.shields.io/badge/jquery-2C2255?style=for-the-badge&logo=jquery&logoColor=white"/>
-                              </td>
-                          </tr>
-                           <tr>
-                              <td>BACKEND</td>
-                              <td>
-                              <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white"/>
-                                  <img src="https://img.shields.io/badge/BootStrap-7952B3?style=for-the-badge&logo=BootStrap&logoColor=white"/>
-                                  <img src="https://img.shields.io/badge/eclipse-2C2255?style=for-the-badge&logo=eclipse&logoColor=white"/>
-                              </td>
-                          </tr>
-                           <tr>
-                              <td>DATABASE</td>
-                              <td>
-                                 <img src="https://img.shields.io/badge/Oracle 11g-F80000?style=for-the-badge&logo=Oracle&logoColor=white"/> 
-                                 <img src="https://img.shields.io/badge/MyBatis-1D2D35?style=for-the-badge&logo=MyBatis&logoColor=white"/>
-                              </td>
-                          </tr>
-                           <tr>
-                              <td>AWS</td>
-                              <td>
-                                  <img src="https://img.shields.io/badge/Apache Tomcat 9.0-D22128?style=for-the-badge&logo=Apache Tomcat&logoColor=white"/>
-                              </td>
-                          </tr>
-                           <tr>
-                              <td>PYTHON</td>
-                              <td>
-                                  <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
-                                  <img src="https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=numpy&logoColor=white"/>
-                                  <img src="https://img.shields.io/badge/numpy-013243?style=for-the-badge&logo=numpy&logoColor=white"/>
-                              </td>
-                          </tr>
-                          <tr>
-                              <td>협업도구</td>
-                              <td>
-                                  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=Git&logoColor=white"/> 
-                                  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white"/>
-                              </td>
-                          </tr>
-                      </table>
-                   <br>
-                  </div>
-                      <h3>담당 역할 : Front-End</h3>
-                   <br>
-                      <p> LUXURY CLOTHING은 OCR 기반 영수증 활용 중고 명품 판매 플랫폼 입니다. 위탁 서비스를 통해 편리한 거래 기능을 제공하며<br>
-                      다양한 상품을 개인에게 맞게 이번 주 상품 추천 구매 기능, 적정한 가격과 신뢰를 기반하며 검색 및 필터링 기능을 사용하실</p>
-                        <br>
-                        <hr id="modal-hr"/>
-                      </div>
-                  </div>
-
-
-
+                  <button id="projects-li-btn2" data-content="content2">
+                    <h3>LuxuryClothing<br>OCR 기반 영수증 활용 중고 명품 판매 플랫폼</h3>
+                </button>
                 </li>
+                </ul>
 
-             
-                
-                
+          <div id="content1" class="hidden">
+                  <h2>[EDUWORDS] GPT 3.5 Turbo 기반 초등학생 영어 문제 생성 및 온라인 학습 서비스</h2>
+                  <h3>진행 기간: 2024. 04. 23 ~ 2024. 05 .30(5주)</h3>
+                  <h3>담당 역할: Front-End</h3><br>
+                  <h3>사용 스킬</h3>
+                  <div>
+                  <table>
+                    <tr>
+                        <th>구분</th>
+                        <th>내용</th>
+                    </tr>
+                    <tr>
+                        <td>사용언어</td>
+                        <td>
+                          <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white">
+                            <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white"/>
+                            <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Front</td>
+                        <td>
+                            <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=HTML5&logoColor=white"/>
+                            <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=CSS3&logoColor=white"/>
+                            <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>개발도구</td>
+                        <td>
+                            <img src="https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white"/>
+                            <img src="https://img.shields.io/badge/IntelliJ_IDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>서버환경</td>
+                        <td>
+                            <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white"/>
+                          <img src="https://img.shields.io/badge/Amazon_AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white">
+                          <img src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>데이터베이스</td>
+                        <td>
+                            <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>협업도구</td>
+                        <td>
+                            <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=Git&logoColor=white"/>
+                            <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white"/>
+                        </td>
+                    </tr>
+                </table>
+              </div>
+              <br>
+              <p> EDUWORDS는 초등학생을 대상으로 영어 학습 문제를 생성하고 온라인 학습을 지원하는 혁신적인 에듀테크 플랫폼입니다. <br>
+              이 서비스는 GPT 3.5 Turbo를 기반으로 하여 다양한 형태의 영어 문제를 자동으로 생성하며, 
+              학생들이 시간과 장소에 구애받지 않고 학습할 수 있도록 도와줍니다.</p>
+              <br>
+              <hr id="modal-hr"/>
+              <br>
+            <ul>
+              <li id="modal-li-box">
+                <h3>시스템 아키텍처</h3>
+                <div>
+                <img src="/img/eduwords아키텍처.png" width="800px">
+                <p>파인튜닝된 GPT 모델을 사용해 만든 영어 문제를 파이썬으로 호출하고 PAST API를 통해 백터DB에 저장합니다</p>
+                </div>  
+              </li>
+              <br>
+              <li id="modal-li-box">
+                <h3>서비스 흐름도</h3>
+                <div>
+                <img src="/img/서비스흐름도.PNG" width="800px">
+                <p>이해를 돕기 위한 서비스 흐름도 입니다.<br>
+                로그인 시 교사와 학생으로 나눠지며 교사와 학생은 사용할 수 있는 기능이 다릅니다.</p>
+                </div>  
+              </li>
+              <br>
+              <li id="modal-li-box">
+                <h3>단어장</h3>
+                <div>
+                <img src="/img/단어장.PNG" width="800px">
+                <p>단어장은 원하는 영어 단어를 검색하고 검색한 단어를 개인 단어장에 추가하여 학습할 수 있습니다.<br>
+                초등학생들이 이용하는 만큼 한 눈에 확인할 수 있도록 매우 단순한 ui로 디자인 하였습니다.</p>
+                </div>  
+              </li>
+              <br>
+              <li id="modal-li-box">
+                <h3>문제생성</h3>
+                <div>
+                <img src="/img/문제생성.PNG" width="800px">
+                <p>문제생성은 GPT 3.5터보를 이용한 AI생성과 직접 문제생성를 할 수 있습니다.<br>
+                교사들이 쉽게 사용할 수 있도록 최대한 깔끔하고 직관적인게 디자인 하였습니다.</p>
+                </div>  
+              </li>
+              <br>
+              <li id="modal-li-box">
+                <h3>문제리스트</h3>
+                <div>
+                <img src="/img/문제리스트.PNG" width="800px">
+                <p>문제리스트는 직접 생성한 문제와 AI로 생성한 문제들이 모아져 있는 공간입니다. 문제를 선택하여 문제 생성을 클릭하면<br>
+                미리보기 화면으로 넘어가게 되며, 선택된 문제들은 해당하는 학생들에게 배포할수 있습니다. <br>
+                문제를 선택하면 한 눈에 확인할 수 있도록 선택한 문제에 테두리와, 문제의 개수만큼 목록 왼쪽 하단에 count가 같이 올라가도록 설정하였습니다.</p>
+                </div>  
+              </li>
+              <br>
+              <li id="modal-li-box">
+                <h3>공부방</h3>
+                <div>
+                <img src="/img/공부방.PNG" width="800px">
+                <p>공부방은 문제를 부여받은 학생들이 문제집을 풀 수 있습니다. 해당 목록을 클릭하면 관련한 문제를 풀 수 있습니다.<br>
+                학생들에게 공부에 대한 목표를 가질 수 있도록 학업에 관련한 자극 문구를 넣었으며,<br>
+                문제를 풀 때는 어떤 답을 선택했는지 쉽게 확인할 수 있도록 하였습니다.<br></p>
+                </div>  
+              </li>
+              <br>
+            </ul>
+            <hr id="modal-hr"/>
+            <br>
+            <h3>EDUWORDS 시연 영상</h3>
+            <br>
+            <video src="/video/eduwords.mp4" width="800px" controls></video>
+            <p>tts가 함께 들어있습니다. 전체적인 흐름을 알 수 있습니다. 소리로 들으면 좋습니다!</p>
+          </div>
+              <!-- content1끝 -->
 
-
-
-
-
-
+          <div id="content2" class="hidden">
+                  <h2>[LuxuryClothing] OCR 기반 영수증 활용 중고 명품 판매 플랫폼</h2>
+                  <h3>진행 기간: 2024. 01. 16 ~ 2024. 02 .26(5주)</h3>
+                  <h3>담당 역할: Front-End</h3><br>
+                  <h3>사용 스킬</h3>
+                  <div>
+                  <table>
+                    <tr>
+                        <th>구분</th>
+                        <th>내용</th>
+                    </tr>
+                     <tr>
+                        <td>FRONTEAD</td>
+                        <td>
+                             <img src="https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=HTML5&logoColor=white"/>
+                            <img src="https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=CSS3&logoColor=white"/>
+                            <img src="https://img.shields.io/badge/JS-F7DF1E?style=for-the-badge&logo=JS&logoColor=white"/>
+                            <img src="https://img.shields.io/badge/jquery-2C2255?style=for-the-badge&logo=jquery&logoColor=white"/>
+                        </td>
+                    </tr>
+                     <tr>
+                        <td>BACKEND</td>
+                        <td>
+                        <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white"/>
+                            <img src="https://img.shields.io/badge/BootStrap-7952B3?style=for-the-badge&logo=BootStrap&logoColor=white"/>
+                            <img src="https://img.shields.io/badge/eclipse-2C2255?style=for-the-badge&logo=eclipse&logoColor=white"/>
+                        </td>
+                    </tr>
+                     <tr>
+                        <td>DATABASE</td>
+                        <td>
+                           <img src="https://img.shields.io/badge/Oracle 11g-F80000?style=for-the-badge&logo=Oracle&logoColor=white"/> 
+                           <img src="https://img.shields.io/badge/MyBatis-1D2D35?style=for-the-badge&logo=MyBatis&logoColor=white"/>
+                        </td>
+                    </tr>
+                     <tr>
+                        <td>AWS</td>
+                        <td>
+                            <img src="https://img.shields.io/badge/Apache Tomcat 9.0-D22128?style=for-the-badge&logo=Apache Tomcat&logoColor=white"/>
+                        </td>
+                    </tr>
+                     <tr>
+                        <td>PYTHON</td>
+                        <td>
+                            <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
+                            <img src="https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=numpy&logoColor=white"/>
+                            <img src="https://img.shields.io/badge/numpy-013243?style=for-the-badge&logo=numpy&logoColor=white"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>협업도구</td>
+                        <td>
+                            <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=Git&logoColor=white"/> 
+                            <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white"/>
+                        </td>
+                    </tr>
+                </table>
+                </div>
+              <br>
+              <p> LUXURY CLOTHING은 OCR 기반 영수증 활용 중고 명품 판매 플랫폼 입니다. 위탁 서비스를 통해 편리한 거래 기능을 제공하며<br>
+              다양한 상품을 개인에게 맞게 이번 주 상품 추천 구매 기능, 적정한 가격과 신뢰를 기반하며 검색 및 필터링 기능을 사용하실 수 있습니다.</p>
+              <br>
+              <hr id="modal-hr"/>
+              <br>
+            <ul>
+              <li id="modal-li-box">
+                <h3>시스템 아키텍처</h3>
+                <div>
+                <img src="/img/럭셔리클로딩 시스템아키텍처.PNG" width="800px">
+                <p>프론트에서 데이터를 url에 담아 백엔드에 요청하면 백엔드가 요청한 데이터를 반환합니다.</p>
+                </div>  
+              </li>
+              <br>
               </ul>
-             
-                
-              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              </div>
+          
+              <div class="modal hidden">
+                  <div class="modal-overlay"></div>
+                  <div class="modal-content">
+                      <div id="modal-content-box"></div>
+                      <button class="closeModal">Close</button>
+                  </div>
+              </div>
+
             </div>
             </section>
+            <footer>
+              <div>kim-haneul@naver.com<br>
+                @Copyright 2024. kimhaneul all rights reserved.
+              </div>
+            </footer>
     </main>
+ 
     <script src="/js/main.js"></script>
   </body>
 </html>

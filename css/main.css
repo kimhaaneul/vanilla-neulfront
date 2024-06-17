@@ -150,6 +150,16 @@ li {
 }
 
 /*=================== profile 구간 ==========================*/
+#profile-title {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+#profile-title h1 {
+  color: rgb(7, 23, 51);
+  font-size: 40pt;
+}
 
 #profile-content {
   display: flex;
@@ -196,6 +206,10 @@ h2 {
 #profile-content-line {
   border: 2px solid rgb(255, 255, 255);
 }
+#profile-div-box {
+  display: flex;
+  align-items: center;
+}
 
 #profile-content-div {
   display: flex;
@@ -223,8 +237,7 @@ h2 {
   color: rgb(255, 255, 255);
 }
 #skills-title {
-  padding: 30px;
-  margin-bottom: 40px;
+  padding: 50px;
 }
 
 #skills-box-container {
@@ -257,8 +270,12 @@ h2 {
   text-align: center;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 50vh;
   background-color: rgb(255, 255, 255);
+}
+
+#projects-title {
+  padding: 30px;
 }
 
 #projects-content h1 {
@@ -267,12 +284,13 @@ h2 {
   margin: 30px;
 }
 
-#projects-li-btn h3 {
-  font-size: 22px;
+#projects-li-btn1 h3,
+#projects-li-btn2 h3 {
+  font-size: 20px;
   line-height: 1.5;
 }
 
-#projects-li-btn,
+#projects-li-btn1,
 #projects-li-btn2 {
   color: #ffffff;
   font-size: 20pt;
@@ -287,7 +305,7 @@ h2 {
   border: none;
 }
 
-#projects-li-btn:hover,
+#projects-li-btn1:hover,
 #projects-li-btn2:hover {
   color: rgb(7, 23, 51);
   background: rgb(255, 230, 0);
@@ -385,4 +403,16 @@ h2 {
 
 #modal-hr {
   border-color: rgb(230, 228, 226);
+}
+/* =========== footer ===========*/
+footer {
+  width: 100%;
+  height: 10vh;
+  background-color: rgb(59, 62, 66);
+  color: #ffffff;
+  display: grid;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+  line-height: 1.6;
 }

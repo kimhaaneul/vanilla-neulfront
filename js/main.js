@@ -12,6 +12,34 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+/* 네비바 이동 */
+function scrollToSection(event, sectionId) {
+  event.preventDefault();
+  const section = document.getElementById(sectionId);
+  window.scrollTo({
+    top: section.offsetTop,
+    behavior: "smooth",
+  });
+}
+
+document
+  .getElementById("profile-link")
+  .addEventListener("click", function (event) {
+    scrollToSection(event, "profile");
+  });
+
+document
+  .getElementById("skills-link")
+  .addEventListener("click", function (event) {
+    scrollToSection(event, "skills");
+  });
+
+document
+  .getElementById("projects-link")
+  .addEventListener("click", function (event) {
+    scrollToSection(event, "projects");
+  });
+
 /* 이벤트 후 opacity효과 */
 document.addEventListener("DOMContentLoaded", () => {
   const clickMessage = document.getElementById("click-message");
@@ -57,13 +85,19 @@ function typingEvent() {
 let setTyping = setInterval(typingEvent, txtSpeed);
 
 /* 모달 */
-const modalBtn = document.querySelector("#projects-li-btn");
+const modalBtns = document.querySelectorAll("button[id^='projects-li-btn']");
 const modal = document.querySelector(".modal");
 const closeModal = document.querySelector(".closeModal");
 const modaloverlay = document.querySelector(".modal-overlay");
+const modalContentBox = document.getElementById("modal-content-box");
 
-modalBtn.addEventListener("click", () => {
-  modal.classList.remove("hidden");
+modalBtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const contentId = btn.getAttribute("data-content");
+    const content = document.getElementById(contentId).innerHTML;
+    modalContentBox.innerHTML = content;
+    modal.classList.remove("hidden");
+  });
 });
 
 closeModal.addEventListener("click", () => {
@@ -73,26 +107,3 @@ closeModal.addEventListener("click", () => {
 modaloverlay.addEventListener("click", () => {
   modal.classList.add("hidden");
 });
-
-// const modalBtns = document.querySelectorAll("button[id^='projects-li-btn']");
-// const modal = document.querySelector(".modal");
-// const closeModal = document.querySelector(".closeModal");
-// const modaloverlay = document.querySelector(".modal-overlay");
-// const modalText = document.getElementById("modal-text");
-
-// modalBtns.forEach((btn) => {
-//   btn.addEventListener("click", () => {
-//     const btnId = btn.id;
-//     const content = document.getElementById(`content-${btnId}`).innerHTML;
-//     modalText.innerHTML = content;
-//     modal.classList.remove("hidden");
-//   });
-// });
-
-// closeModal.addEventListener("click", () => {
-//   modal.classList.add("hidden");
-// });
-
-// modaloverlay.addEventListener("click", () => {
-//   modal.classList.add("hidden");
-// });
