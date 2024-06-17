@@ -54,5 +54,6 @@ function typingEvent() {
     }, txtDelay);
   }
 }
-
 let setTyping = setInterval(typingEvent, txtSpeed);
+
+/* 모달 */

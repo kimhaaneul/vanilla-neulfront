@@ -6,6 +6,11 @@
 
 a {
   text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
 }
 
 #home-nav {
@@ -116,7 +121,7 @@ a {
 }
 
 .typing {
-  font-size: 50px;
+  font-size: 40pt;
 }
 .typing:after {
   display: inline-block;
@@ -214,23 +219,74 @@ h2 {
 }
 
 #skills-content h1 {
-  font-size: 30pt;
+  font-size: 40pt;
   color: rgb(255, 255, 255);
 }
 #skills-title {
   padding: 30px;
+  margin-bottom: 40px;
 }
 
 #skills-box-container {
-  display: flex;
+  margin-left: 40vh;
   align-items: center;
   justify-content: center;
 }
 
-#skills-box {
-  width: 300px;
-  height: 20vh;
-  margin: 30px;
+#skills-li-box {
+  display: flexbox;
+  align-items: center;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+#skills-li-box h3 {
+  color: #ffffff;
+  font-size: 28pt;
+}
+
+#skills-li-text {
+  color: #ffffff;
+  text-align: left;
+  padding: 10px;
+  line-height: 1.6;
+}
+
+/* ======================= Projects구간 ======================= */
+#projects-content {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   background-color: rgb(255, 255, 255);
-  border-radius: 30px;
+}
+
+#projects-content h1 {
+  color: rgb(7, 23, 51);
+  font-size: 40pt;
+  margin: 30px;
+}
+
+#projects-li-box h3 {
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+#projects-li-box {
+  color: #ffffff;
+  font-size: 20pt;
+  background: rgb(7, 23, 51);
+  width: 80vh;
+  height: 7vh;
+  border-radius: 25px;
+  margin: auto;
+  padding: 10px;
+  list-style-type: none;
+  cursor: pointer;
+  border: none;
+}
+
+#projects-li-box:hover {
+  color: rgb(7, 23, 51);
+  background: rgb(255, 230, 0);
 }
