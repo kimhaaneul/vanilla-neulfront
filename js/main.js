@@ -73,3 +73,26 @@ closeModal.addEventListener("click", () => {
 modaloverlay.addEventListener("click", () => {
   modal.classList.add("hidden");
 });
+
+// const modalBtns = document.querySelectorAll("button[id^='projects-li-btn']");
+// const modal = document.querySelector(".modal");
+// const closeModal = document.querySelector(".closeModal");
+// const modaloverlay = document.querySelector(".modal-overlay");
+// const modalText = document.getElementById("modal-text");
+
+// modalBtns.forEach((btn) => {
+//   btn.addEventListener("click", () => {
+//     const btnId = btn.id;
+//     const content = document.getElementById(`content-${btnId}`).innerHTML;
+//     modalText.innerHTML = content;
+//     modal.classList.remove("hidden");
+//   });
+// });
+
+// closeModal.addEventListener("click", () => {
+//   modal.classList.add("hidden");
+// });
+
+// modaloverlay.addEventListener("click", () => {
+//   modal.classList.add("hidden");
+// });

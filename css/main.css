@@ -272,7 +272,8 @@ h2 {
   line-height: 1.5;
 }
 
-#projects-li-btn {
+#projects-li-btn,
+#projects-li-btn2 {
   color: #ffffff;
   font-size: 20pt;
   background: rgb(7, 23, 51);
@@ -286,7 +287,8 @@ h2 {
   border: none;
 }
 
-#projects-li-btn:hover {
+#projects-li-btn:hover,
+#projects-li-btn2:hover {
   color: rgb(7, 23, 51);
   background: rgb(255, 230, 0);
 }
