@@ -214,6 +214,7 @@ h2 {
 #profile-content-div {
   display: flex;
   align-items: center;
+  margin-left: 10px;
 }
 
 #profile-contentr {
