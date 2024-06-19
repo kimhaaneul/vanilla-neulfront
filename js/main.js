@@ -1,4 +1,4 @@
-/* click 이벤트*/
+/* click */
 document.addEventListener("DOMContentLoaded", () => {
   const menuClick = document.querySelectorAll("#menu li a");
 
@@ -40,7 +40,7 @@ document
     scrollToSection(event, "projects");
   });
 
-/* 이벤트 후 opacity효과 */
+/* 이벤트 후 opacity 효과 */
 document.addEventListener("DOMContentLoaded", () => {
   const clickMessage = document.getElementById("click-message");
   const mainContent = document.getElementById("main-content");

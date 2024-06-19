@@ -224,7 +224,6 @@ h2 {
 }
 
 /* =================== skils 구간=========================*/
-
 #skills-content {
   text-align: center;
   justify-content: center;
@@ -405,6 +404,7 @@ h2 {
 #modal-hr {
   border-color: rgb(230, 228, 226);
 }
+
 /* =========== footer ===========*/
 footer {
   width: 100%;
