@@ -27,6 +27,7 @@ li {
   width: 100%;
   z-index: 1000;
   box-sizing: border-box;
+  display: none;
 }
 
 #nav-continer {
@@ -102,7 +103,7 @@ li {
   cursor: pointer;
   color: rgb(7, 23, 51);
   text-align: center;
-  margin-top: 40vh;
+  margin-top: 15%;
   font-size: 200px;
 }
 
