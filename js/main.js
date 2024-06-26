@@ -14,7 +14,7 @@
 
 document.addEventListener("DOMContentLoaded", () => {
   // const clickMessage = document.getElementById("click-message");
-  const mainOpacity = document.getElementById("main-opacity");
+  // const mainOpacity = document.getElementById("main-opacity");
   const abutme = document.getElementById("abutme");
   const homeNav = document.getElementById("home-nav");
 
