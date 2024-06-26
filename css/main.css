@@ -99,13 +99,13 @@ li {
 }
 /*======================= navbar css 끝 ======================*/
 
-#click-message {
+/* #click-message {
   cursor: pointer;
   color: rgb(7, 23, 51);
   text-align: center;
   margin-top: 15%;
   font-size: 200px;
-}
+} */
 
 /* ====================abutme 구간 ===============================*/
 #abutme {
@@ -117,7 +117,7 @@ li {
   align-items: center;
   height: 100vh;
   opacity: 0;
-  transition: opacity 2.5s ease-in-out;
+  /* transition: opacity 2.5s ease-in-out; */
   flex-direction: column;
 }
 
