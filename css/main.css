@@ -659,16 +659,18 @@ footer {
   /* ========= 프로젝트 구간 ========= */
 
   #projects-content {
-    height: 60vh;
+    height: 55vh;
   }
 
   #projects-content h1 {
-    font-size: 30pt;
+    font-size: 25pt;
   }
 
   #projects-li-btn1,
   #projects-li-btn2 {
-    border-radius: 15px;
+    width: 50vw;
+    height: 11vh;
+    border-radius: 12px;
   }
 
   #projects-li-btn1 h3,
