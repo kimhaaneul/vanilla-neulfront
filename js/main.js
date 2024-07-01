@@ -1,46 +1,12 @@
-/* click */
-// document.addEventListener("DOMContentLoaded", () => {
-//   const menuClick = document.querySelectorAll("#menu li a");
-
-//   menuClick.forEach((item) => {
-//     item.addEventListener("click", () => {
-//       item.classList.add("shake");
-//       setTimeout(() => {
-//         item.classList.remove("shake");
-//       }, 500);
-//     });
-//   });
-// });
-
 document.addEventListener("DOMContentLoaded", () => {
-  // const clickMessage = document.getElementById("click-message");
-  // const mainOpacity = document.getElementById("main-opacity");
   const abutme = document.getElementById("abutme");
   const homeNav = document.getElementById("home-nav");
-
-  // clickMessage.addEventListener("click", () => {
-  //   clickMessage.style.display = "none";
-  //   mainOpacity.style.display = "block";
   homeNav.style.display = "flex";
 
   setTimeout(() => {
     abutme.style.opacity = 1;
   }, 10);
 });
-// });
-
-// document.addEventListener("DOMContentLoaded", () => {
-//   const menuClick = document.querySelectorAll("#menu li a");
-
-//   menuClick.forEach((item) => {
-//     item.addEventListener("click", () => {
-//       item.classList.add("shake");
-//       setTimeout(() => {
-//         item.classList.remove("shake");
-//       }, 500);
-//     });
-//   });
-// });
 
 /* 네비바 이동 */
 function scrollToSection(event, sectionId) {
@@ -69,22 +35,6 @@ document
   .addEventListener("click", function (event) {
     scrollToSection(event, "projects");
   });
-
-/* 이벤트 후 opacity 효과 */
-// document.addEventListener("DOMContentLoaded", () => {
-//   const clickMessage = document.getElementById("click-message");
-//   const mainContent = document.getElementById("main-content");
-//   const abutme = document.getElementById("abutme");
-
-//   clickMessage.addEventListener("click", () => {
-//     clickMessage.style.display = "none";
-//     mainContent.style.display = "block";
-
-//     setTimeout(() => {
-//       abutme.style.opacity = 1;
-//     }, 10);
-//   });
-// });
 
 /* 타이핑 효과 */
 const txtWrap = document.querySelector(".typing");

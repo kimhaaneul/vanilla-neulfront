@@ -1,7 +1,6 @@
 * {
   margin: 0;
   font-family: Pretendard;
-  font-size: 16px;
 }
 
 a {
@@ -15,16 +14,16 @@ li {
 
 #home-nav {
   background: rgb(7, 23, 51);
-  height: 50px;
+  height: 5vh;
   align-items: center;
   display: flex;
   justify-content: space-between;
-  padding: 0 100px;
+  padding: 0 10vw;
   color: rgb(255, 255, 255);
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   z-index: 1000;
   box-sizing: border-box;
   display: none;
@@ -44,11 +43,11 @@ li {
 }
 
 #home-nav a {
-  margin-right: 10px;
+  margin-right: 1vw;
 }
 
 #home-nav-p {
-  margin-left: 10px;
+  margin-left: 0.8vw;
 }
 
 #menu {
@@ -60,7 +59,7 @@ li {
 }
 
 #menu li {
-  margin-left: 20px;
+  margin-left: 2vw;
 }
 
 #menu li a {
@@ -99,14 +98,6 @@ li {
 }
 /*======================= navbar css 끝 ======================*/
 
-/* #click-message {
-  cursor: pointer;
-  color: rgb(7, 23, 51);
-  text-align: center;
-  margin-top: 15%;
-  font-size: 200px;
-} */
-
 /* ====================abutme 구간 ===============================*/
 #abutme {
   background-color: rgb(7, 23, 51);
@@ -117,19 +108,19 @@ li {
   align-items: center;
   height: 100vh;
   opacity: 0;
-  /* transition: opacity 2.5s ease-in-out; */
   flex-direction: column;
 }
 
 .typing {
-  font-size: 40pt;
+  font-size: 40px;
 }
+
 .typing:after {
   display: inline-block;
-  margin-left: 2px;
+  margin-left: 0.2vw;
   vertical-align: middle;
-  content: "";
   background: #ffffff;
+  content: "";
   width: 2px;
   height: 48px;
   animation: blink infinite 1s ease;
@@ -145,7 +136,7 @@ li {
 }
 
 #abutme p {
-  font-size: 20pt;
+  font-size: 2.8vh;
   margin: 30px 0;
   line-height: 1.5;
 }
@@ -159,7 +150,7 @@ li {
 
 #profile-title h1 {
   color: rgb(7, 23, 51);
-  font-size: 40pt;
+  font-size: 40px;
 }
 
 #profile-content {
@@ -172,12 +163,11 @@ li {
 #profile-img {
   display: flex;
   align-items: center;
-  margin-right: 20px;
+  margin-right: 2vw;
 }
 
 #profile-content h1 {
   font-size: 30pt;
-  margin-right: 20px;
   color: rgb(7, 23, 51);
 }
 
@@ -187,8 +177,8 @@ h2 {
 }
 
 #profile-content-hr {
-  width: 10px;
-  height: 44px;
+  width: 8px;
+  height: 45px;
   background-color: rgb(255, 230, 0);
   border: none;
   border-left: 4px solid rgb(255, 230, 0);
@@ -196,8 +186,8 @@ h2 {
 }
 
 #profile-content-hr2 {
-  width: 10px;
-  height: 44px;
+  width: 8px;
+  height: 45px;
   background-color: rgb(0, 140, 255);
   border: none;
   border-left: 4px solid rgb(0, 140, 255);
@@ -207,6 +197,7 @@ h2 {
 #profile-content-line {
   border: 2px solid rgb(255, 255, 255);
 }
+
 #profile-div-box {
   display: flex;
   align-items: center;
@@ -229,7 +220,7 @@ h2 {
   text-align: center;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 110vh;
   background-color: rgb(7, 23, 51);
 }
 
@@ -238,7 +229,7 @@ h2 {
   color: rgb(255, 255, 255);
 }
 #skills-title {
-  padding: 50px;
+  padding: 5vw;
 }
 
 #skills-box-container {
@@ -251,7 +242,7 @@ h2 {
   display: flexbox;
   align-items: center;
   text-align: left;
-  margin-bottom: 40px;
+  margin-bottom: 4vh;
 }
 
 #skills-li-box h3 {
@@ -276,13 +267,13 @@ h2 {
 }
 
 #projects-title {
-  padding: 30px;
+  padding: 10px;
 }
 
 #projects-content h1 {
   color: rgb(7, 23, 51);
   font-size: 40pt;
-  margin: 30px;
+  margin: 2vw;
 }
 
 #projects-li-btn1 h3,
@@ -345,7 +336,7 @@ h2 {
   top: 0;
   width: 60%;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  max-width: 100%;
+  max-width: 100vh;
   max-height: 80vh;
   overflow: auto;
 }
@@ -417,4 +408,324 @@ footer {
   align-items: center;
   margin: auto;
   line-height: 1.6;
+}
+
+/* =========== 태블릿으로 봤을 때 ==========*/
+
+@media screen and (max-width: 1200px) {
+  #home-nav {
+    font-size: 14px;
+  }
+
+  #home-left img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .typing {
+    font-size: 30px;
+  }
+
+  .typing:after {
+    content: "";
+    height: 32px;
+  }
+
+  /* ========== 프로필 ========= */
+
+  #profile-content {
+    height: 80vh;
+    font-size: 14px;
+  }
+
+  #profile-img {
+    width: 230px;
+    height: 230px;
+    margin-right: 80px;
+  }
+
+  #profile-content h1 {
+    font-size: 25pt;
+  }
+
+  #profile-content-div p,
+  h2 {
+    padding: 3px;
+  }
+
+  #profile-content-hr {
+    width: 6px;
+    height: 40px;
+    background-color: rgb(255, 230, 0);
+    border-left: 3px solid rgb(255, 230, 0);
+    margin-right: 9px;
+  }
+
+  #profile-content-hr2 {
+    width: 6px;
+    height: 40px;
+    background-color: rgb(0, 140, 255);
+    border-left: 3px solid rgb(0, 140, 255);
+    margin-right: 9px;
+  }
+
+  #profile-content-line {
+    border: 2px solid rgb(255, 255, 255);
+  }
+
+  #profile-content-div {
+    margin-left: 8px;
+  }
+
+  /* ========= 스킬 구간 ======== */
+  #skills-content {
+    height: 112vh;
+    font-size: 14px;
+  }
+
+  #skills-content h1 {
+    font-size: 30px;
+  }
+
+  #skills-box-container {
+    margin-left: 22vh;
+  }
+
+  #skills-li-box {
+    margin-bottom: 25px;
+  }
+
+  #skills-li-box h3 {
+    font-size: 18pt;
+  }
+
+  #skills-li-text {
+    padding: 5px;
+    line-height: 1.4;
+  }
+
+  /* ========= 프로젝트 구간 ========= */
+
+  #projects-content {
+    height: 60vh;
+  }
+
+  #projects-content h1 {
+    font-size: 30pt;
+  }
+
+  #projects-li-btn1,
+  #projects-li-btn2 {
+    border-radius: 15px;
+  }
+
+  #projects-li-btn1 h3,
+  #projects-li-btn2 h3 {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  /* ========= 모달 ========= */
+
+  .modal-content {
+    border-radius: 10px;
+    font-size: 14px;
+  }
+
+  #modal-li-box img,
+  video {
+    width: 480px;
+  }
+
+  .modal-content::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  .modal-content::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+  }
+
+  .modal-content::-webkit-scrollbar-track {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  footer {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+}
+
+/* =========== 모바일로 봤을 때 ==========*/
+
+@media screen and (max-width: 768px) {
+  #home-nav {
+    font-size: 13px;
+  }
+
+  #home-left img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .typing {
+    font-size: 30px;
+  }
+
+  .typing:after {
+    content: "";
+    height: 32px;
+  }
+
+  /* ========== 프로필 ========= */
+
+  #profile-content {
+    height: 100vh;
+    font-size: 13px;
+  }
+
+  #profile-img img {
+    width: 220px;
+    height: 220px;
+  }
+
+  #profile-img {
+    display: contents;
+    margin-right: 40px;
+  }
+
+  #profile-content h1 {
+    font-size: 20pt;
+  }
+
+  #profile-content-div p,
+  h2 {
+    padding: 2px;
+  }
+
+  #profile-div-box {
+    display: grid;
+    align-items: center;
+    gap: 8px;
+  }
+
+  #profile-content-hr {
+    width: 5px;
+    height: 38px;
+    background-color: rgb(255, 230, 0);
+    border-left: 2px solid rgb(255, 230, 0);
+    margin-right: 8px;
+  }
+
+  #profile-content-hr2 {
+    width: 5px;
+    height: 38px;
+    background-color: rgb(0, 140, 255);
+    border-left: 2px solid rgb(0, 140, 255);
+    margin-right: 8px;
+  }
+
+  #profile-content-div {
+    margin-left: 7px;
+  }
+
+  /* ========= 스킬 구간 ======== */
+  #skills-content {
+    height: 112vh;
+    font-size: 13px;
+  }
+
+  #skills-content h1 {
+    font-size: 25px;
+  }
+
+  #skills-box-container {
+    margin-left: 20vh;
+  }
+
+  #skills-li-box {
+    margin-bottom: 25px;
+  }
+
+  #skills-li-box h3 {
+    font-size: 16pt;
+  }
+
+  #skills-li-text {
+    padding: 5px;
+    line-height: 1.4;
+  }
+
+  /* ========= 프로젝트 구간 ========= */
+
+  #projects-content {
+    height: 60vh;
+  }
+
+  #projects-content h1 {
+    font-size: 30pt;
+  }
+
+  #projects-li-btn1,
+  #projects-li-btn2 {
+    border-radius: 15px;
+  }
+
+  #projects-li-btn1 h3,
+  #projects-li-btn2 h3 {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  /* ========= 모달 ========= */
+
+  .modal-content {
+    border-radius: 10px;
+    font-size: 13px;
+  }
+
+  #modal-li-box img,
+  video {
+    width: 400px;
+  }
+
+  .modal-content::-webkit-scrollbar {
+    width: 7px;
+  }
+
+  .modal-content::-webkit-scrollbar-thumb {
+    border-radius: 7px;
+  }
+
+  .modal-content::-webkit-scrollbar-track {
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+  }
+
+  /* ======= 모달 컨텐츠 ======== */
+  #modal-content-box {
+    align-items: center;
+    text-align: left;
+    line-height: 1.4;
+    padding: 10px;
+  }
+
+  ul,
+  li {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  #modal-content-box h2 {
+    font-size: 22px;
+  }
+
+  #modal-content-box h3 {
+    font-size: 16px;
+  }
+
+  footer {
+    font-size: 13px;
+    line-height: 1.3;
+  }
 }
