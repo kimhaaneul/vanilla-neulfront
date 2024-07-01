@@ -863,7 +863,7 @@ footer {
 
   #projects-li-btn1,
   #projects-li-btn2 {
-    width: 60vw;
+    width: 68vw;
     height: 8vh;
     border-radius: 12px;
   }
@@ -871,7 +871,7 @@ footer {
   #projects-li-btn1 h3,
   #projects-li-btn2 h3 {
     font-size: 12px;
-    line-height: 1.4;
+    line-height: 1.5;
   }
 
   /* ========= 모달 ========= */
