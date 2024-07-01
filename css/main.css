@@ -797,11 +797,6 @@ footer {
     white-space: pre;
   }
 
-  #profile-content-all h1,
-  #profile-content-all p {
-    display: none;
-  }
-
   #profile-content h1 {
     font-size: 16pt;
   }
