@@ -769,7 +769,7 @@ footer {
   }
 
   #abutme {
-    height: 70vh;
+    height: 100vh;
   }
 
   #abutme p {
@@ -779,7 +779,7 @@ footer {
   /* ========== 프로필 ========= */
 
   #profile-content {
-    height: 65vh;
+    height: 70vh;
     font-size: 10px;
   }
 
@@ -824,7 +824,7 @@ footer {
 
   /* ========= 스킬 구간 ======== */
   #skills-content {
-    height: 63vh;
+    height: 68vh;
     font-size: 12px;
   }
 
@@ -834,6 +834,7 @@ footer {
 
   #skills-box-container {
     margin-left: 4vh;
+    margin-right: 4vh;
   }
 
   #skills-li-box {
@@ -861,7 +862,7 @@ footer {
 
   #projects-li-btn1,
   #projects-li-btn2 {
-    width: 60vw;
+    width: 50vw;
     height: 8vh;
     border-radius: 12px;
   }
@@ -885,16 +886,16 @@ footer {
   }
 
   .modal-content::-webkit-scrollbar {
-    width: 6px;
+    width: 3px;
   }
 
   .modal-content::-webkit-scrollbar-thumb {
-    border-radius: 6px;
+    border-radius: 3px;
   }
 
   .modal-content::-webkit-scrollbar-track {
-    border-top-right-radius: 6px;
-    border-bottom-right-radius: 6px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
   }
 
   ul,
