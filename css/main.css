@@ -787,7 +787,7 @@ footer {
     display: none;
   }
 
-  #profile-content-all h1::after {
+  /* #profile-content-all h1::after {
     content: "꿈꾸는 프론트엔드 개발자 \A 김하늘 입니다.";
     white-space: pre;
   }
@@ -795,10 +795,14 @@ footer {
   #profile-content-all p::after {
     content: "개발이란 분야에서 새로운 기술에 도전하는 것을 두려워 하지 않고, \A 변화에 수긍하며 어떠한 기술에서도 변화무쌍하게 \A 적응할 수 있는 꿈꾸는 개발자가 되겠습니다.";
     white-space: pre;
-  }
+  } */
 
   #profile-content h1 {
     font-size: 16pt;
+  }
+
+  #profile-p {
+    font-size: 10px;
   }
 
   #profile-content-div p,
