@@ -154,11 +154,6 @@ li {
   justify-content: center;
 }
 
-#profile-title h1 {
-  color: rgb(7, 23, 51);
-  font-size: 40px;
-}
-
 #profile-content {
   display: flex;
   align-items: center;
@@ -172,7 +167,7 @@ li {
   margin-right: 2vw;
 }
 
-#profile-content h1 {
+#profile-h1 {
   font-size: 30pt;
   color: rgb(7, 23, 51);
 }
@@ -454,7 +449,7 @@ footer {
     margin-right: 80px;
   }
 
-  #profile-content h1 {
+  #profile-h1 {
     font-size: 25pt;
   }
 
@@ -574,6 +569,7 @@ footer {
   }
 }
 
+/* =============== 모바일 768px ================*/
 @media screen and (max-width: 768px) {
   #home-nav {
     font-size: 13px;
@@ -610,7 +606,7 @@ footer {
     margin-right: 40px;
   }
 
-  #profile-content h1 {
+  #profile-h1 {
     font-size: 20pt;
   }
 
@@ -797,12 +793,13 @@ footer {
     white-space: pre;
   } */
 
-  #profile-content h1 {
+  #profile-h1 {
     font-size: 16pt;
   }
 
   #profile-p {
     font-size: 10px;
+    line-height: 1.3;
   }
 
   #profile-content-div p,

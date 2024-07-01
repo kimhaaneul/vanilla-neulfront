@@ -93,10 +93,10 @@ const profileimg = document.querySelector("profile-img");
 /* media screen max-width 430일때 개행용 */
 document.addEventListener("DOMContentLoaded", function () {
   if (window.innerWidth <= 430) {
-    const profileTitle = document.getElementById("profile-title");
+    const profileH1 = document.getElementById("profile-h1");
     const profileP = document.getElementById("profile-p");
 
-    profileTitle.innerHTML = "꿈꾸는 프론트엔드 개발자 <br> 김하늘 입니다.";
+    profileH1.innerHTML = "꿈꾸는 프론트엔드 개발자 <br> 김하늘 입니다.";
     profileP.innerHTML =
       "개발이란 분야에서 새로운 기술에 도전하는 것을 두려워 하지 않고, <br> 변화에 수긍하며 어떠한 기술에서도 변화무쌍하게 <br> 적응할 수 있는 꿈꾸는 개발자가 되겠습니다.";
   }
